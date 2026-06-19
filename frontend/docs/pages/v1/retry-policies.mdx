@@ -250,13 +250,13 @@ For HTTP 429 responses, the Go SDK honors a `Retry-After` header only when it is
 
 **gRPC calls**
 
-| Status Code                                                | Retried |
-| ---------------------------------------------------------- | ------- |
-| `UNAVAILABLE`, `DEADLINE_EXCEEDED`, `INTERNAL`             | Yes     |
-| `RESOURCE_EXHAUSTED`                                       | Yes     |
-| `FAILED_PRECONDITION`                                      | No      |
-| `UNIMPLEMENTED`, `NOT_FOUND`, `INVALID_ARGUMENT`           | No      |
-| `ALREADY_EXISTS`, `UNAUTHENTICATED`, `PERMISSION_DENIED`   | No      |
+| Status Code                                              | Retried |
+| -------------------------------------------------------- | ------- |
+| `UNAVAILABLE`, `DEADLINE_EXCEEDED`, `INTERNAL`           | Yes     |
+| `RESOURCE_EXHAUSTED`                                     | Yes     |
+| `FAILED_PRECONDITION`                                    | No      |
+| `UNIMPLEMENTED`, `NOT_FOUND`, `INVALID_ARGUMENT`         | No      |
+| `ALREADY_EXISTS`, `UNAUTHENTICATED`, `PERMISSION_DENIED` | No      |
 
 ### Configuring Go SDK client retries
 
